@@ -1,14 +1,3 @@
-from six.moves import urllib
-from sklearn.datasets import fetch_mldata
-
-def load_mnist():
-    mnist_path = "./mnist-original.mat"
-    from scipy.io import loadmat
-    mnist_raw = loadmat(mnist_path)
-    mnist = {
-        "data": mnist_raw["data"].T,
-        "target": mnist_raw["label"][0],
-        "COL_NAMES": ["label", "data"],
-        "DESCR": "mldata.org dataset: mnist-original",
-    }
-    return mnist
+version https://git-lfs.github.com/spec/v1
+oid sha256:89168e3c1935287f7c337a68a6eaef985254408e389c8867f77c1aeaf0d4e8bd
+size 408
